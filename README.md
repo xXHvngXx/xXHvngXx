@@ -15,7 +15,7 @@
   </p>
 
   <br/>
-  <img src="./amber-divider.svg" alt="Golden Spin Divider" width="100%" />
+ <img src="./amber-divider.svg?v=2" alt="Golden Spin Divider" width="100%" />
 </div>
 
 ### 🚀 What I'm Working On
@@ -26,5 +26,5 @@
 
 <div align="center">
   <br/>
-  <img src="./amber-divider.svg" alt="Golden Spin Divider" width="100%" />
+ <img src="./amber-divider.svg?v=2" alt="Golden Spin Divider" width="100%" />
 </div>
