@@ -13,12 +13,18 @@
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
   </p>
-</div>
 
----
+  <br/>
+  <img src="./amber-divider.svg" alt="Golden Spin Divider" width="100%" />
+</div>
 
 ### 🚀 What I'm Working On
 - 🔭 Developing full-stack web apps with **ASP.NET MVC** and **Spring Boot**
 - 📱 Building cross-platform mobile apps using **Flutter & Dart**
 - 🤖 Exploring **Machine Learning** & data clustering models
 - ♟️ Grinding 5-minute Blitz chess & optimizing mechanics in my free time
+
+<div align="center">
+  <br/>
+  <img src="./amber-divider.svg" alt="Golden Spin Divider" width="100%" />
+</div>
