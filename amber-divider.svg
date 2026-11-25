@@ -1,0 +1,37 @@
+<svg width="100%" height="24" viewBox="0 0 1000 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <linearGradient id="amberBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0" />
+      <stop offset="20%" stop-color="#D97706" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.85" />
+      <stop offset="80%" stop-color="#D97706" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0" />
+    </linearGradient>
+
+    
+    <linearGradient id="energyPulse" x1="-30%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FEF08A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+      <animate attributeName="x1" from="-30%" to="100%" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="130%" dur="3.5s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+
+  
+  <line x1="20" y1="12" x2="980" y2="12" stroke="url(#amberBase)" stroke-width="1.5" />
+  
+  <line x1="20" y1="12" x2="980" y2="12" stroke="url(#energyPulse)" stroke-width="2.5" />
+
+  
+  <g transform="translate(500, 12)">
+    <circle r="7" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="6 3" fill="#0D1117" fill-opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle r="2.5" fill="#FDE68A">
+      <animate attributeName="r" values="2;3.2;2" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
