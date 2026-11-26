@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.png" alt="Steel Ball Run - Lesson 5" width="100%" />
+  <img src="banner-animated.svg" alt="Steel Ball Run - Lesson 5" width="100%" />
   
   <h3>Greetings, I'm Minh Hung Pham 👋</h3>
   <p><i>Software Engineering Student • Building web, mobile, and data-driven applications</i></p>
@@ -15,7 +15,7 @@
   </p>
 
   <br/>
- <img src="./amber-divider.svg?v=2" alt="Golden Spin Divider" width="100%" />
+ <img src="./amber-divider.svg?v=3" alt="Golden Spin Divider" width="100%" />
 </div>
 
 ### 🚀 What I'm Working On
@@ -26,5 +26,5 @@
 
 <div align="center">
   <br/>
- <img src="./amber-divider.svg?v=2" alt="Golden Spin Divider" width="100%" />
+ <img src="./amber-divider.svg?v=3" alt="Golden Spin Divider" width="100%" />
 </div>
