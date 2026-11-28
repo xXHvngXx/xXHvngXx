@@ -136,4 +136,12 @@
 
   <br/>
   <img src="./office-divider.svg?v=1" alt="Workstation Divider" width="100%" />
+
+  <div align="center">
+  <details>
+    <summary><code>[ 🌿 ... ]</code></summary>
+    <br/>
+    <img src="./pasture-horses.svg?v=1" alt="Peaceful Pasture" width="100%" />
+  </details>
+</div>
 </div>
