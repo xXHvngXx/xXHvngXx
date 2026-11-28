@@ -1,283 +1,253 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110" width="100%" height="100%">
   <defs>
     
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#070312" />
-      <stop offset="45%" stop-color="#13072e" />
-      <stop offset="82%" stop-color="#240b4c" />
-      <stop offset="100%" stop-color="#110524" />
-    </linearGradient>
-
-    
-    <radialGradient id="ambientGlow" cx="50%" cy="78%" r="60%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.42" />
-      <stop offset="45%" stop-color="#6b21a8" stop-opacity="0.18" />
-      <stop offset="100%" stop-color="#070312" stop-opacity="0" />
+    <radialGradient id="lampGlow" cx="24%" cy="52%" r="36%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.28" />
+      <stop offset="55%" stop-color="#f59e0b" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
     </radialGradient>
 
     
-    <radialGradient id="lightningGlow" cx="68%" cy="22%" r="45%">
-      <stop offset="0%" stop-color="#f5d0fe" stop-opacity="0.65" />
-      <stop offset="40%" stop-color="#c084fc" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#13072e" stop-opacity="0" />
+    <radialGradient id="screenGlow" cx="56%" cy="56%" r="32%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.26" />
+      <stop offset="60%" stop-color="#10b981" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
     </radialGradient>
-
-    
-    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e093d" stop-opacity="0.9" />
-      <stop offset="35%" stop-color="#120526" stop-opacity="0.98" />
-      <stop offset="100%" stop-color="#06020f" stop-opacity="1" />
-    </linearGradient>
-
-    
-    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#9333ea" stop-opacity="0" />
-      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#3b0764" stop-opacity="0" />
-    </linearGradient>
-
-    
-    <linearGradient id="dropNear" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0" />
-      <stop offset="65%" stop-color="#d8b4fe" stop-opacity="0.75" />
-      <stop offset="100%" stop-color="#fae8ff" stop-opacity="0.95" />
-    </linearGradient>
-
-    <linearGradient id="dropMid" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#7e22ce" stop-opacity="0" />
-      <stop offset="70%" stop-color="#c084fc" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#e9d5ff" stop-opacity="0.75" />
-    </linearGradient>
-
-    <linearGradient id="dropFar" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#581c87" stop-opacity="0" />
-      <stop offset="100%" stop-color="#9333ea" stop-opacity="0.38" />
-    </linearGradient>
-
-    
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <filter id="cloudBlur" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="14" />
-    </filter>
-
-    
-    <g id="farRainCluster">
-      <line x1="45" y1="10" x2="39" y2="55" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="120" y1="90" x2="114" y2="140" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="195" y1="30" x2="189" y2="75" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="270" y1="160" x2="264" y2="210" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="340" y1="50" x2="334" y2="95" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="415" y1="220" x2="409" y2="265" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="490" y1="15" x2="484" y2="65" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="565" y1="130" x2="559" y2="180" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="640" y1="270" x2="634" y2="315" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="715" y1="70" x2="709" y2="120" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="790" y1="190" x2="784" y2="240" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="865" y1="25" x2="859" y2="70" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="940" y1="145" x2="934" y2="195" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="1015" y1="310" x2="1009" y2="355" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="1090" y1="85" x2="1084" y2="135" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="1165" y1="210" x2="1159" y2="260" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="85" y1="280" x2="79" y2="330" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="230" y1="330" x2="224" y2="375" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="450" y1="350" x2="444" y2="395" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="680" y1="360" x2="674" y2="405" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="900" y1="320" x2="894" y2="370" stroke="url(#dropFar)" stroke-width="1" />
-      <line x1="1125" y1="340" x2="1119" y2="385" stroke="url(#dropFar)" stroke-width="1" />
-    </g>
-
-    <g id="midRainCluster">
-      <line x1="30" y1="20" x2="20" y2="95" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="110" y1="140" x2="100" y2="215" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="190" y1="55" x2="180" y2="130" stroke="url(#dropMid)" stroke-width="1.4" stroke-linecap="round" />
-      <line x1="275" y1="240" x2="265" y2="315" stroke="url(#dropMid)" stroke-width="1.6" stroke-linecap="round" />
-      <line x1="360" y1="10" x2="350" y2="85" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="445" y1="175" x2="435" y2="250" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="530" y1="80" x2="520" y2="155" stroke="url(#dropMid)" stroke-width="1.6" stroke-linecap="round" />
-      <line x1="615" y1="290" x2="605" y2="365" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="700" y1="35" x2="690" y2="110" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="785" y1="200" x2="775" y2="275" stroke="url(#dropMid)" stroke-width="1.6" stroke-linecap="round" />
-      <line x1="870" y1="115" x2="860" y2="190" stroke="url(#dropMid)" stroke-width="1.4" stroke-linecap="round" />
-      <line x1="955" y1="265" x2="945" y2="340" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="1040" y1="45" x2="1030" y2="120" stroke="url(#dropMid)" stroke-width="1.6" stroke-linecap="round" />
-      <line x1="1125" y1="165" x2="1115" y2="240" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="1190" y1="310" x2="1180" y2="385" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="70" y1="320" x2="60" y2="395" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="395" y1="330" x2="385" y2="405" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-      <line x1="825" y1="340" x2="815" y2="415" stroke="url(#dropMid)" stroke-width="1.5" stroke-linecap="round" />
-    </g>
-
-    <g id="nearRainCluster" filter="url(#softGlow)">
-      <line x1="75" y1="15" x2="60" y2="125" stroke="url(#dropNear)" stroke-width="2.2" stroke-linecap="round" />
-      <line x1="210" y1="185" x2="195" y2="295" stroke="url(#dropNear)" stroke-width="2.4" stroke-linecap="round" />
-      <line x1="350" y1="65" x2="335" y2="175" stroke="url(#dropNear)" stroke-width="2" stroke-linecap="round" />
-      <line x1="495" y1="260" x2="480" y2="370" stroke="url(#dropNear)" stroke-width="2.3" stroke-linecap="round" />
-      <line x1="640" y1="30" x2="625" y2="140" stroke="url(#dropNear)" stroke-width="2.2" stroke-linecap="round" />
-      <line x1="780" y1="210" x2="765" y2="320" stroke="url(#dropNear)" stroke-width="2.4" stroke-linecap="round" />
-      <line x1="920" y1="90" x2="905" y2="200" stroke="url(#dropNear)" stroke-width="2.1" stroke-linecap="round" />
-      <line x1="1065" y1="280" x2="1050" y2="390" stroke="url(#dropNear)" stroke-width="2.3" stroke-linecap="round" />
-      <line x1="1165" y1="45" x2="1150" y2="155" stroke="url(#dropNear)" stroke-width="2.2" stroke-linecap="round" />
-      <line x1="145" y1="310" x2="130" y2="415" stroke="url(#dropNear)" stroke-width="2.2" stroke-linecap="round" />
-      <line x1="570" y1="150" x2="555" y2="260" stroke="url(#dropNear)" stroke-width="2" stroke-linecap="round" />
-      <line x1="850" y1="330" x2="835" y2="430" stroke="url(#dropNear)" stroke-width="2.2" stroke-linecap="round" />
-    </g>
   </defs>
 
   <style>
-    .rain-far {
-      animation: fallFar 1.85s linear infinite;
+    .cursor-blink {
+      animation: blink 0.9s steps(2, start) infinite;
     }
-    .rain-mid {
-      animation: fallMid 1.15s linear infinite;
-    }
-    .rain-near {
-      animation: fallNear 0.72s linear infinite;
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
     }
 
-    @keyframes fallFar {
-      0% { transform: translate(0px, 0px); }
-      100% { transform: translate(-54px, 420px); }
+    .code-scroll {
+      animation: scrollCode 6s steps(6, end) infinite;
     }
-    @keyframes fallMid {
-      0% { transform: translate(0px, 0px); }
-      100% { transform: translate(-56px, 420px); }
-    }
-    @keyframes fallNear {
-      0% { transform: translate(0px, 0px); }
-      100% { transform: translate(-58px, 420px); }
+    @keyframes scrollCode {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
     }
 
-    .lightning {
-      animation: flash 7.5s ease-in-out infinite;
+    .steam-1 {
+      animation: steamRise 2.8s steps(4, end) infinite;
     }
-    @keyframes flash {
-      0%, 72%, 100% { opacity: 0; }
-      74% { opacity: 0.75; }
-      76% { opacity: 0.15; }
-      78% { opacity: 0.9; }
-      84% { opacity: 0; }
+    .steam-2 {
+      animation: steamRise 2.8s steps(4, end) 1.4s infinite;
     }
-
-    .cloud-drift-1 {
-      animation: drift1 22s ease-in-out infinite alternate;
-    }
-    .cloud-drift-2 {
-      animation: drift2 28s ease-in-out infinite alternate;
-    }
-    @keyframes drift1 {
-      0% { transform: translateX(-25px); }
-      100% { transform: translateX(35px); }
-    }
-    @keyframes drift2 {
-      0% { transform: translateX(30px); }
-      100% { transform: translateX(-30px); }
+    @keyframes steamRise {
+      0% { transform: translateY(0px); opacity: 0.85; }
+      70% { opacity: 0.45; }
+      100% { transform: translateY(-6px); opacity: 0; }
     }
 
-    .ripple {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: rippleExpand 1.6s ease-out infinite;
+    .star-twinkle {
+      animation: twinkle 3.2s steps(2, end) infinite;
     }
-    .r1 { animation-delay: 0.0s; }
-    .r2 { animation-delay: 0.45s; }
-    .r3 { animation-delay: 0.9s; }
-    .r4 { animation-delay: 0.25s; }
-    .r5 { animation-delay: 1.15s; }
-    .r6 { animation-delay: 0.7s; }
-    .r7 { animation-delay: 1.35s; }
-
-    @keyframes rippleExpand {
-      0% {
-        transform: scale(0.25);
-        opacity: 0.95;
-        stroke-width: 1.8;
-      }
-      70% {
-        opacity: 0.45;
-      }
-      100% {
-        transform: scale(2.4);
-        opacity: 0;
-        stroke-width: 0.4;
-      }
+    .star-twinkle-delay {
+      animation: twinkle 3.2s steps(2, end) 1.6s infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.2; }
     }
 
-    .splash-dot {
-      animation: splashPop 1.6s ease-out infinite;
+    .led-pulse {
+      animation: ledShift 4s steps(2, end) infinite;
     }
-    @keyframes splashPop {
-      0% { transform: translateY(0px); opacity: 0.9; }
-      40% { transform: translateY(-9px); opacity: 0.7; }
-      100% { transform: translateY(2px); opacity: 0; }
+    @keyframes ledShift {
+      0%, 100% { fill: #38bdf8; }
+      50% { fill: #34d399; }
+    }
+
+    .server-blink {
+      animation: serverLed 1.4s steps(2, end) infinite;
+    }
+    @keyframes serverLed {
+      0%, 100% { fill: #10b981; }
+      50% { fill: #064e3b; }
     }
   </style>
 
   
-  <rect width="1200" height="420" fill="url(#skyGrad)" />
-  <rect width="1200" height="420" fill="url(#ambientGlow)" />
-  <rect class="lightning" width="1200" height="420" fill="url(#lightningGlow)" />
+  <rect width="320" height="110" fill="#0f172a" />
+  
+  <rect x="0" y="0" width="96" height="84" fill="#131c31" />
+  <rect x="224" y="0" width="96" height="84" fill="#131c31" />
+  <rect x="96" y="0" width="2" height="84" fill="#1e293b" />
+  <rect x="222" y="0" width="2" height="84" fill="#1e293b" />
 
   
-  <g filter="url(#cloudBlur)" opacity="0.65">
-    <g class="cloud-drift-1" fill="#2e1065">
-      <ellipse cx="180" cy="40" rx="220" ry="65" />
-      <ellipse cx="480" cy="25" rx="260" ry="75" />
-      <ellipse cx="860" cy="45" rx="280" ry="70" />
-      <ellipse cx="1120" cy="20" rx="200" ry="60" />
-    </g>
-    <g class="cloud-drift-2" fill="#4c1d95" opacity="0.55">
-      <ellipse cx="320" cy="65" rx="210" ry="50" />
-      <ellipse cx="720" cy="55" rx="240" ry="55" />
-      <ellipse cx="1020" cy="70" rx="220" ry="48" />
-    </g>
+  <rect x="104" y="8" width="112" height="58" fill="#070d19" />
+  
+  <rect class="star-twinkle" x="114" y="14" width="1" height="1" fill="#e2e8f0" />
+  <rect class="star-twinkle-delay" x="132" y="12" width="1" height="1" fill="#93c5fd" />
+  <rect class="star-twinkle" x="156" y="16" width="1" height="1" fill="#e2e8f0" />
+  <rect class="star-twinkle-delay" x="188" y="13" width="1" height="1" fill="#fde68a" />
+  <rect class="star-twinkle" x="204" y="18" width="1" height="1" fill="#e2e8f0" />
+  
+  <rect x="197" y="12" width="3" height="4" fill="#fef08a" />
+  <rect x="199" y="13" width="2" height="2" fill="#070d19" />
+
+  
+  <rect x="106" y="34" width="14" height="32" fill="#111827" />
+  <rect x="122" y="26" width="18" height="40" fill="#1e293b" />
+  <rect x="142" y="38" width="15" height="28" fill="#0f172a" />
+  <rect x="159" y="22" width="20" height="44" fill="#172033" />
+  <rect x="181" y="30" width="16" height="36" fill="#1e293b" />
+  <rect x="199" y="25" width="15" height="41" fill="#111827" />
+
+  
+  <rect x="125" y="30" width="2" height="2" fill="#fbbf24" opacity="0.7" />
+  <rect x="131" y="30" width="2" height="2" fill="#38bdf8" opacity="0.6" />
+  <rect x="125" y="36" width="2" height="2" fill="#fbbf24" opacity="0.5" />
+  <rect x="134" y="42" width="2" height="2" fill="#fbbf24" opacity="0.8" />
+  <rect x="163" y="27" width="2" height="2" fill="#38bdf8" opacity="0.7" />
+  <rect x="171" y="27" width="2" height="2" fill="#fbbf24" opacity="0.6" />
+  <rect x="167" y="33" width="2" height="2" fill="#fbbf24" opacity="0.8" />
+  <rect x="163" y="39" width="2" height="2" fill="#34d399" opacity="0.6" />
+  <rect x="185" y="34" width="2" height="2" fill="#fbbf24" opacity="0.7" />
+  <rect x="191" y="40" width="2" height="2" fill="#38bdf8" opacity="0.6" />
+  <rect x="203" y="30" width="2" height="2" fill="#fbbf24" opacity="0.75" />
+  <rect x="209" y="36" width="2" height="2" fill="#fbbf24" opacity="0.5" />
+
+  
+  <rect x="103" y="7" width="114" height="2" fill="#334155" />
+  <rect x="103" y="65" width="114" height="2" fill="#334155" />
+  <rect x="103" y="7" width="2" height="60" fill="#334155" />
+  <rect x="215" y="7" width="2" height="60" fill="#334155" />
+  <rect x="140" y="9" width="2" height="56" fill="#334155" />
+  <rect x="178" y="9" width="2" height="56" fill="#334155" />
+
+  
+  <rect x="18" y="28" width="64" height="3" fill="#475569" />
+  <rect x="24" y="31" width="3" height="4" fill="#334155" />
+  <rect x="73" y="31" width="3" height="4" fill="#334155" />
+  
+  <rect x="22" y="16" width="4" height="12" fill="#3b82f6" />
+  <rect x="26" y="18" width="3" height="10" fill="#10b981" />
+  <rect x="29" y="15" width="4" height="13" fill="#f59e0b" />
+  <rect x="33" y="17" width="3" height="11" fill="#8b5cf6" />
+  
+  <rect x="64" y="22" width="10" height="6" fill="#b45309" />
+  <rect x="63" y="21" width="12" height="2" fill="#d97706" />
+  <rect x="67" y="15" width="4" height="6" fill="#16a34a" />
+  <rect x="64" y="17" width="3" height="3" fill="#22c55e" />
+  <rect x="71" y="16" width="3" height="4" fill="#15803d" />
+
+  
+  
+  <rect x="244" y="14" width="16" height="16" fill="#1e293b" />
+  <rect x="245" y="15" width="14" height="14" fill="#0f172a" />
+  <rect x="251" y="17" width="2" height="5" fill="#38bdf8" />
+  <rect x="251" y="21" width="5" height="2" fill="#f8fafc" />
+  
+  <rect x="270" y="14" width="32" height="22" fill="#1e293b" />
+  <rect x="271" y="15" width="30" height="20" fill="#0f172a" />
+  <rect x="273" y="17" width="7" height="3" fill="#38bdf8" />
+  <rect x="273" y="22" width="7" height="3" fill="#10b981" />
+  <rect x="282" y="17" width="7" height="3" fill="#f59e0b" />
+  <rect x="282" y="22" width="7" height="3" fill="#38bdf8" />
+  <rect x="291" y="17" width="7" height="3" fill="#10b981" />
+  <rect x="291" y="27" width="7" height="3" fill="#a855f7" />
+
+  
+  <rect width="320" height="110" fill="url(#lampGlow)" />
+  <rect width="320" height="110" fill="url(#screenGlow)" />
+
+  
+  <rect x="16" y="82" width="288" height="4" fill="#475569" />
+  <rect x="16" y="86" width="288" height="3" fill="#334155" />
+  
+  <rect x="28" y="89" width="6" height="21" fill="#1e293b" />
+  <rect x="286" y="89" width="6" height="21" fill="#1e293b" />
+  
+  <rect x="0" y="106" width="320" height="4" fill="#090d16" />
+
+  
+  <rect x="52" y="79" width="16" height="3" fill="#334155" />
+  <rect x="58" y="64" width="3" height="15" fill="#64748b" />
+  <rect x="61" y="54" width="3" height="12" fill="#64748b" />
+  <rect x="64" y="49" width="10" height="3" fill="#64748b" />
+  
+  <rect x="72" y="47" width="12" height="5" fill="#475569" />
+  <rect x="74" y="52" width="10" height="2" fill="#fef08a" />
+
+  
+  <rect x="108" y="78" width="14" height="4" fill="#334155" />
+  <rect x="113" y="70" width="4" height="8" fill="#475569" />
+  <rect x="101" y="34" width="28" height="38" fill="#1e293b" />
+  <rect x="103" y="36" width="24" height="34" fill="#090e1a" />
+  
+  <rect x="105" y="39" width="10" height="2" fill="#38bdf8" />
+  <rect x="107" y="43" width="14" height="2" fill="#10b981" />
+  <rect x="107" y="47" width="11" height="2" fill="#a855f7" />
+  <rect x="105" y="51" width="16" height="2" fill="#64748b" />
+  <rect x="107" y="55" width="12" height="2" fill="#f59e0b" />
+  <rect x="105" y="59" width="9" height="2" fill="#38bdf8" />
+  <rect x="107" y="63" width="15" height="2" fill="#10b981" />
+
+  
+  
+  <rect x="142" y="79" width="48" height="3" fill="#334155" />
+  
+  <rect x="140" y="76" width="52" height="3" fill="#94a3b8" />
+  <rect x="144" y="75" width="44" height="1" fill="#38bdf8" class="led-pulse" />
+  
+  <rect x="143" y="44" width="46" height="32" fill="#1e293b" />
+  <rect x="145" y="46" width="42" height="28" fill="#070b14" />
+  
+  <rect x="145" y="46" width="42" height="3" fill="#172033" />
+  <rect x="147" y="47" width="1" height="1" fill="#ef4444" />
+  <rect x="149" y="47" width="1" height="1" fill="#f59e0b" />
+  <rect x="151" y="47" width="1" height="1" fill="#10b981" />
+  
+  <rect x="145" y="49" width="9" height="25" fill="#0d1322" />
+  <rect x="147" y="52" width="5" height="1" fill="#38bdf8" />
+  <rect x="147" y="55" width="6" height="1" fill="#64748b" />
+  <rect x="147" y="58" width="4" height="1" fill="#10b981" />
+  <rect x="147" y="61" width="6" height="1" fill="#64748b" />
+
+  
+  <g class="code-scroll">
+    <rect x="157" y="52" width="14" height="2" fill="#c084fc" />
+    <rect x="173" y="52" width="8" height="2" fill="#38bdf8" />
+    <rect x="159" y="56" width="18" height="2" fill="#34d399" />
+    <rect x="159" y="60" width="12" height="2" fill="#fbbf24" />
+    <rect x="173" y="60" width="10" height="2" fill="#94a3b8" />
+    <rect x="161" y="64" width="16" height="2" fill="#38bdf8" />
+    <rect x="159" y="68" width="11" height="2" fill="#f472b6" />
+    <rect x="157" y="72" width="15" height="2" fill="#34d399" />
+    <rect x="159" y="76" width="19" height="2" fill="#38bdf8" />
   </g>
+  
+  <rect x="145" y="46" width="42" height="3" fill="#172033" />
+  <rect x="145" y="74" width="42" height="2" fill="#1e293b" />
+  
+  <rect class="cursor-blink" x="172" y="68" width="2" height="3" fill="#f8fafc" />
 
   
-  <g class="rain-far">
-    <use href="#farRainCluster" x="0" y="0" />
-    <use href="#farRainCluster" x="54" y="-420" />
-  </g>
+  
+  <rect x="206" y="74" width="9" height="8" fill="#f8fafc" />
+  <rect x="215" y="76" width="2" height="4" fill="#cbd5e1" />
+  <rect x="207" y="74" width="7" height="1" fill="#78350f" />
+  
+  <rect class="steam-1" x="208" y="70" width="1" height="2" fill="#cbd5e1" />
+  <rect class="steam-2" x="212" y="69" width="1" height="2" fill="#94a3b8" />
 
   
-  <g class="rain-mid">
-    <use href="#midRainCluster" x="0" y="0" />
-    <use href="#midRainCluster" x="56" y="-420" />
-  </g>
+  <rect x="226" y="79" width="18" height="3" fill="#1e3a8a" />
+  <rect x="227" y="78" width="16" height="1" fill="#e2e8f0" />
+  <rect x="230" y="77" width="10" height="1" fill="#fbbf24" />
 
   
-  <rect x="0" y="345" width="1200" height="75" fill="url(#groundGrad)" />
-  <line x1="0" y1="345" x2="1200" y2="345" stroke="#9333ea" stroke-width="1" opacity="0.35" />
-  <rect x="0" y="310" width="1200" height="60" fill="url(#mistGrad)" />
-
-  
-  <g fill="none" stroke="#e879f9" filter="url(#softGlow)">
-    <ellipse class="ripple r1" cx="140" cy="378" rx="14" ry="4" />
-    <ellipse class="ripple r2" cx="310" cy="392" rx="16" ry="4.5" />
-    <ellipse class="ripple r3" cx="485" cy="370" rx="13" ry="3.5" />
-    <ellipse class="ripple r4" cx="650" cy="398" rx="18" ry="5" />
-    <ellipse class="ripple r5" cx="810" cy="376" rx="14" ry="4" />
-    <ellipse class="ripple r6" cx="965" cy="390" rx="16" ry="4.5" />
-    <ellipse class="ripple r7" cx="1100" cy="372" rx="13" ry="3.5" />
-  </g>
-
-  
-  <g fill="#f5d0fe">
-    <circle class="splash-dot r1" cx="137" cy="376" r="1.4" />
-    <circle class="splash-dot r2" cx="314" cy="390" r="1.5" />
-    <circle class="splash-dot r4" cx="646" cy="396" r="1.6" />
-    <circle class="splash-dot r6" cx="969" cy="388" r="1.4" />
-  </g>
-
-  
-  <g class="rain-near">
-    <use href="#nearRainCluster" x="0" y="0" />
-    <use href="#nearRainCluster" x="58" y="-420" />
-  </g>
+  <rect x="254" y="72" width="22" height="10" fill="#1e293b" />
+  <rect x="256" y="74" width="18" height="2" fill="#0f172a" />
+  <rect class="server-blink" x="257" y="74" width="2" height="2" fill="#10b981" />
+  <rect x="261" y="74" width="2" height="2" fill="#38bdf8" />
+  <rect x="256" y="78" width="18" height="2" fill="#0f172a" />
+  <rect class="server-blink" x="257" y="78" width="2" height="2" fill="#10b981" />
 </svg>
