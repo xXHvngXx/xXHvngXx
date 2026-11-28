@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./office-pixel-banner.svg?v=1" alt="Developer Office Workspace" width="100%" />
+  <img src="./office-pixel-banner.svg?v=2" alt="Developer Office Workspace" width="100%" />
 
   <h2>Minh Hung Pham <img src="https://img.shields.io/badge/Software_Engineering-0F172A?style=flat-square&logo=github&logoColor=38BDF8" /></h2>
   <p>
